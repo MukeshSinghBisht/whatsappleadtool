@@ -1,0 +1,12 @@
+groups:
+  - name: lead-alerts
+    rules:
+      - alert: HighDLQLength
+        expr: leads_dlqueued_total > 100
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "DLQ is too long!"
+          description: "There are more than 100 dlq in dead letter queue for the last 5 minutes"
+          
