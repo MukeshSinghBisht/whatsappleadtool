@@ -47,3 +47,4 @@ http://prometheus:9090
 2.consumer
 3.dlq consumer
 4.do query via curl
+
