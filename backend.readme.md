@@ -31,8 +31,6 @@ kafka-topics --create --topic lead-capture --partitions 1 --replication-factor 1
 # faulty message example
 curl -X POST http://localhost:3001/lead   -H "Content-Type: application/json"   -d '{"name":"Ravi","phone":"9876543210","message":"I need bridal service","leadId":"124"}'
 
-# mongodb connection string
-mongodb+srv://whatsappleadtooluser:Whats&app#lead&tool@cluster0.fnxxfxi.mongodb.net/whatsappleadtool?retryWrites=true&w=majority&appName=Cluster0
 
 # Visit:
 🧪 Prometheus: http://localhost:9090
