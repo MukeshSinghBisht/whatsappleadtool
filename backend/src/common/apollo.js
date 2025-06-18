@@ -1,13 +1,21 @@
-const { ApolloServer } = require('apollo-server-express');
+const { ApolloServer } = require('@apollo/server');
+const { expressMiddleware } = require('@apollo/server/express4');
+const express = require('express');
 const { schema } = require('./appollo.schema');
-const server = new ApolloServer({ schema ,cors: { origin: 'http://localhost:4000', credentials: true }});
+const server = new ApolloServer({
+    schema,
+    context: ({ req }) => ({ token: req.headers.authorization })
+});
+
 const startServer = async (app) => {
-    try{
+    try {
         await server.start();
-        server.applyMiddleware({ 
-            app,
-            cors: false //disable cors as we are handling it in expresss
-         });
+        
+        app.use('/graphql', express.json(), expressMiddleware(server, {
+            context: ({req}) => ({ token: req.headers.authorization })
+        }));
+
+        // Add a simple health check endpoint
     }catch(e){
         console.log(e)
         throw e;
