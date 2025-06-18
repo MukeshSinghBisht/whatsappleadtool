@@ -1,3 +1,7 @@
+NODE JS VERSION: 22.10.0
+NPM VERSION: 10.1.0
+MONGO DB VERSION: 6.17.0
+
 # whatsappleadtool
 Whatsapp lead generation.
 

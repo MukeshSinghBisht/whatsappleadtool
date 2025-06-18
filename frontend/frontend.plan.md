@@ -1,12 +1,16 @@
 # set up need
-Frontend:
-Next.js + React + Redux Toolkit + RTK Query
-
-Backend:
-Current Kafka + Mongo system we are building
+🔧 Final Tech Stack
+    Layer	Tech
+    Frontend	Next.js (App Router) + React + TailwindCSS
+    State Management	Redux Toolkit + RTK Query (for local state / non-GraphQL API parts)
+    API	GraphQL (Apollo Server)
+    Backend	Node.js + Express + Mongoose + Kafka
+    Database	MongoDB
+    Messaging	Kafka (for events, background processing, notifications, etc.)
+    Auth (later)	NextAuth.js / Auth0
 
 Deployment:
-Vercel (frontend), Railway/Fly.io (backend, free for now)
+    Vercel (frontend), Railway/Fly.io (backend, free for now)
 
 Monitoring:
 Grafana (metrics), Sentry (errors)

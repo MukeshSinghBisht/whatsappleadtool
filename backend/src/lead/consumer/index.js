@@ -2,7 +2,7 @@ const { startRegisterMetricServer, leadsDlQueued } = require('../../common/metri
 const { connect } = require('../../common/db');
 const { restoreDlqCountOnStartup } = require('../../dlq/service/dlq.service');
 const { startConsumer } = require('./kakfka-consumer');
-(async () => {
+const startLeadConsumer = async () => {
     try {
         await connect() // db
         await restoreDlqCountOnStartup(leadsDlQueued) // dlq
@@ -11,4 +11,6 @@ const { startConsumer } = require('./kakfka-consumer');
     } catch (error) {
         console.log(error)
     }
-})()
+}
+module.exports = { startLeadConsumer };
+
