@@ -1,0 +1,5 @@
+sepearting good leads from cold leads (easy tagging system)
+handling cusotmer which asks that we will purchase in 2 to 3 months. so cron and reminder email used.
+message disaapearing cusotmers. we will capture screenshot , messages as well.
+manully adding leads, but if any lead from whatsapp came , it should get merge.
+ensure privacy setup, ask cusotmer to create encryption key, so that even our db admin cant see that.

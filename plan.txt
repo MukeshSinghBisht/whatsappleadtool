@@ -1,0 +1,93 @@
+🛠️ Feature Roadmap (MVP → V1 → Growth)
+✅ Phase 1: MVP (Already in progress)
+Goal: Simple lead capture, structured view, responsive UI
+Features:
+
+ Lead form with Name, Phone, Message
+
+ GraphQL + Redux setup
+
+ Modal-based lead creation
+
+ Scrollable lead list
+
+ Google Sheet export
+
+ Add lead source field (Instagram, Facebook, WhatsApp, etc.)
+
+ WhatsApp deep-link generator (https://wa.me/91<phone>?text=Hi+Mukesh)
+
+🚀 Phase 2: V1 Launch
+Goal: Monetizable plug-and-play tool
+Features:
+
+Lead Capture Link (Shareable URL)
+/lead-form/<your-whatsapp-number> – Creator can embed this in bio or story highlights.
+
+Auto-redirect to WhatsApp after submission
+After form fill, redirect user to WhatsApp with prefilled message.
+
+Webhook/Google Sheets Export (Pro)
+
+Allow users to plug in a webhook URL or Google Sheets to get leads instantly.
+
+Auto-reply system (Simulated bot)
+
+Simple "Thanks for contacting me!" WhatsApp message after form fill.
+
+Tagging System
+
+Tag leads like: "Makeup", "Wedding", "Paid", "Follow-up", etc.
+
+Basic Analytics Dashboard
+
+Leads this week/month, source breakdown, open leads, etc.
+
+Custom Branding
+
+Allow uploading brand logo + colors (Pro)
+
+📈 Phase 3: Growth Features
+Goal: Make it sticky and valuable
+
+CRM-like interface with filters and sorting
+
+WhatsApp ChatGPT follow-up suggestions (AI)
+
+Broadcast list reminders
+
+Integration: Notion, Mailchimp, Webflow, Instamojo
+
+💰 Monetization Strategy (India-focused)
+Plan	Price	Features
+Free	₹0/month	20 leads/mo, 1 shareable form
+Pro	₹99/month	Unlimited leads, Webhook export, remove branding, 3 forms
+Creator Plus	₹299/month	Analytics, Auto-replies, AI reply assist, Google Sheets sync
+One-time Lifetime	₹499	1 form, unlimited leads, no branding
+
+You can use Razorpay or Instamojo for simple payments initially.
+
+🎯 Audience Examples with Use Case
+Persona	Use Case	Trigger
+Makeup Artist	Lead form in Instagram bio	Instagram DM
+Freelancer	Send pricing PDF link	Portfolio clicks
+Boutique Owner	WhatsApp catalog → lead tag	Facebook Ad
+Fitness Coach	Form for interest + redirect	Link in Story
+Real Estate Agent	Track source (FB Ad, OLX, etc.)	High-ticket leads
+
+🔧 Next Step
+Would you like me to:
+
+Design UI wireframes for these features in Figma?
+
+Scaffold backend API and database models for:
+
+Form Sharing
+
+Lead Sources
+
+Lead Tagging
+
+User Plans
+
+Let’s break it sprint by sprint — ready to start with Phase 1 extended features?

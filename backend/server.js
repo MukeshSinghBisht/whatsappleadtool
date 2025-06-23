@@ -26,6 +26,21 @@ const startServer = async () => {
         await apollo.startServer(app);
         await startDLQConsumer();
         await startLeadConsumer();
+        app.get('/webhook/addlead',(req, res)=>{
+            console.log('query',req.query)
+           const VERIFY_TOKEN = 'RvXDuO0VthZIUZuEljdhfL3SKbdjMqq7QRty7bFmScqMSJx2Io65WiPML6J6wEvd'
+
+            const mode = req.query['hub.mode']
+            const token = req.query['hub.verify_token']
+            const challenge = req.query['hub.challenge']
+
+            if (mode && token === VERIFY_TOKEN) {
+                console.log('Webhook verified')
+                res.status(200).send(challenge)
+            } else {
+                res.status(403).send('Verification failed')
+            }
+        })
         app.listen(3004, () => console.log('Server started on port 3004'));
     }catch(e){
         console.log(e)

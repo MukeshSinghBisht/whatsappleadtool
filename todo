@@ -1,0 +1,11 @@
+export to csv in pending.
+sending message:
+curl -i -X POST `
+  https://graph.facebook.com/v22.0/712004185323174/messages `
+  -H 'Authorization: Bearer EAATvhwUdjacBOwKitZBmcOo0FgGZAfZApV9iOQhnXHmd9DyjGx9MoCJdjpa4ZB8DSiZA42VCWHIrZCoVh5hFX2LM5AmYfP2SI5kn5omFFLJKg3qvySYdZBvTjkq5vfjScUKLrxK1aKJMI36XYSpyJwhqysstbQuwkSN6dEE3Won56ljBpnlymCZBZCZCKLJ2llQuJWpBmOkw87pTDMLhLJOUZA5aBDkt2VFD14KXUaMJzQjdtKE6AZDZD' `
+  -H 'Content-Type: application/json' `
+  -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"918859116983\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+
+port 
+https://22v1z1b4-3004.inc1.devtunnels.ms/
+/webhook/addlead

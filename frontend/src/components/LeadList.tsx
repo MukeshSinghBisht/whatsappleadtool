@@ -1,27 +1,30 @@
 'use client'
+
 import React from 'react'
 import { useQuery } from '@apollo/client'
 import { GET_LEADS } from '@/graphql/queries'
+import LeadCard from './LeadCard'
+import { Lead } from '@/redux/slices/leadSlice'
+
 const LeadList = () => {
-    const { data, loading, error } = useQuery(GET_LEADS)
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error: {error.message}</p>
-    return (
-        <div className='p-4 bg-white rounded shadow mt-4'>
-            <h2 className='text-xl font-bold mb-2'>
-                Leads
-            </h2>
-            {
-                data.leads.map((lead: any) => (
-                    <div key={lead.id}>
-                        <p>{lead.name}</p>
-                        <p>{lead.phone}</p>
-                        <p>{lead.message}</p>
-                        <p>{lead.leadId}</p>
-                    </div>
-                ))
-            }
-        </div>
-    )
+  const { data, loading, error } = useQuery(GET_LEADS)
+
+  if (loading) return <p className="text-center py-4">Loading...</p>
+  if (error) return <p className="text-center text-red-500 py-4">Error: {error.message}</p>
+
+  if (!data?.leads?.length) {
+    return <p className="text-center text-gray-500 py-4">No leads found.</p>
+  }
+
+  return (
+    <div className="overflow-y-auto max-h-[70vh] pr-1">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {data.leads.map((lead: Lead) => (
+          <LeadCard key={lead.id} {...lead} />
+        ))}
+      </div>
+    </div>
+  )
 }
+
 export default LeadList

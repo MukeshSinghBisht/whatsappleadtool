@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 // const mongoUrl = `mongodb+srv://whatsappleadtooluser:${encodeURIComponent('Whats&app#lead&tool')}@cluster0.fnxxfxi.mongodb.net/whatsappleadtool?retryWrites=true&w=majority&appName=Cluster0`
 const config = require('./config');
-console.log('url to be used',config.MONGOURL)
 const mongoUrl = config.MONGOURL;
 async function connect(){
     try{

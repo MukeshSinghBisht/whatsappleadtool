@@ -1,0 +1,64 @@
+Here’s a high-converting landing page copy + a pitch summary you can use for your WhatsApp Lead Tool.
+
+🟩 [Landing Page Copy for Website]
+🟢 Headline
+Turn WhatsApp Messages into Leads. Instantly.
+The simplest way to capture, organize, and follow up with your WhatsApp leads — all in one place.
+
+🟡 Subheadline
+Built for solopreneurs, tutors, creators & small businesses who use WhatsApp to grow their business.
+
+✅ Key Benefits (Use Icons)
+🔗 Generate Pre-filled WhatsApp Links
+Share custom links on Instagram, YouTube, or ads — with message context pre-filled.
+
+📥 Automatically Capture Leads
+No more digging through chat lists. All lead messages get logged in your dashboard.
+
+🏷️ Tag & Filter Leads
+Mark leads as Hot, Interested, or Follow-up Later.
+
+📊 Understand What’s Working
+See which posts or links are driving real conversations.
+
+🔄 Integrate with Forms & Tools (Coming Soon)
+Connect Google Forms, Razorpay, or Notion — bring all leads to one place.
+
+📤 Export to CSV Anytime
+Need to follow up via SMS/email? Export all your leads in a click.
+
+📸 Example Section
+"I added the link to my WhatsApp status and got 17 DMs. This tool helped me track who messaged what. I closed 4 paid clients in 3 days."
+— Sakshi, Freelance Nutrition Coach
+
+💡 How It Works (3 Steps)
+🧩 Create a WhatsApp link with your message
+
+📲 Share it anywhere (social media, ads, status, QR code)
+
+📥 Leads appear instantly in your dashboard
+
+🧑‍💻 Who is this for?
+✅ Instagram Coaches
+
+✅ Dance/Music/Yoga Tutors
+
+✅ Freelancers & Consultants
+
+✅ Small Ecommerce Stores
+
+✅ Local Service Providers
+
+💬 Call To Action
+Start capturing WhatsApp leads in 2 minutes.
+No coding. No CRM mess. Just simple lead capture that works.
+
+👉 [ Get Started Free ]
+
+🎤 Pitch Summary (for DMs, Twitter, etc.)
+Most small creators and solopreneurs use WhatsApp for business, but lose track of leads.
+I'm building a tool that auto-captures every lead who DMs you, tracks where they came from, and lets you tag/follow-up easily.
+Works beautifully with Instagram, Razorpay, Forms, etc.
+No CRM headaches. Just leads that convert.
+
+Let me know if you want this copy styled in HTML or exported for Notion, Gumroad, or a simple React landing page.

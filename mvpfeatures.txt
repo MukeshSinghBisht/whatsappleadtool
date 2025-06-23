@@ -1,0 +1,73 @@
+Here's a crisp list of MVP (Minimum Viable Product) features for your WhatsApp Lead Tool, aligned with your SaaS vision — helping users capture and manage WhatsApp leads easily.
+
+✅ Core MVP Features for WhatsApp Lead Tool
+🧩 1. WhatsApp Link Generator
+Input: Mobile number + Pre-filled message
+
+Output: https://wa.me/<number>?text=<encoded-message>
+
+CTA: Copy link to clipboard
+
+Optional: Show QR code (can be added in v2)
+
+📥 2. Lead Capture
+Every WhatsApp message sent via your link is stored as a lead
+(Mimic this in MVP by manual/GraphQL form submission)
+
+Lead Fields: name, phone, message, timestamp, leadId, sourceTag
+
+📋 3. Lead List Dashboard
+Show list of leads (paginated/infinite scroll)
+
+UI: Cards or rows with message preview
+
+Ability to:
+
+Filter by tag (e.g., "Hot", "Cold", "Follow-up")
+
+Search by name or phone
+
+🏷️ 4. Tagging & Status Update
+Allow tagging leads (e.g., ✅ Interested, ❌ Not Interested, 🕓 Follow Up)
+
+UI: Dropdown or badge click to change tag
+
+Tags stored in DB
+
+📤 5. Export to CSV
+Button to export all leads (or filtered leads)
+
+Format: CSV with headers (Name, Phone, Message, Tag, Date)
+
+📊 6. Basic Link Analytics
+Show how many leads came from which link/message
+
+For MVP: Group by sourceTag (passed as query param in link or embedded manually)
+
+🔒 7. Authentication (Basic)
+Login via Google / magic link (Auth0 or Firebase Auth)
+
+Store leads per user account
+
+🛠️ Optional Nice-to-Haves (Post-MVP)
+Webhook support to receive leads from external forms
+
+Auto-tag based on message content (AI later)
+
+Reminder/follow-up notification
+
+WhatsApp QR code generator
+
+Mobile PWA version
+
+Let me know if you want:
+
+A GitHub issues board for these
+
+A Kanban plan (Notion/Trello)
+
+Code structure aligned to these features
+
+Figma layout or page wireframes
+
+We can start building feature by feature in code next.

@@ -23,7 +23,7 @@ const leadSlice = createSlice({
     name: 'lead',
     initialState,
     reducers: {
-        addLeadRequest: (state, action: PayloadAction<Lead>) => {
+        addLeadRequest: (state) => {
             state.loading = true;
             state.error = null;
         },

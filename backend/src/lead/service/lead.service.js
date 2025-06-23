@@ -1,7 +1,7 @@
 const Lead = require('../models/lead')
 const { logger } = require('../../common/logger');
 const { leadsProcessed } = require('../../common/metric');
-
+const { produceLeadEvent } = require('../producer');
 async function leadExists(leadId){
     try{
         const leadexist = await Lead.findOne({leadId: leadId})
